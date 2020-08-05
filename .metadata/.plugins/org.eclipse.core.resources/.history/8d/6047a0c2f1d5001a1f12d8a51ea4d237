@@ -1,0 +1,11 @@
+package com.mh.naver;
+
+public class UserVO {
+
+	private String userName;
+	private String userId;
+	private String userGender;
+	private String userId;
+	
+	
+}

@@ -1,0 +1,5 @@
+package mycontext.conf;
+
+public class MyConf {
+
+}

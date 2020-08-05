@@ -1,0 +1,26 @@
+package auto.service;
+
+import auto.dao.MemberDao;
+
+public class MemberService {
+
+	MemberDao memberDao;
+	
+	public MemberService() {
+	}
+	
+	public MemberService(MemberDao memberDao) {
+		super();
+		this.memberDao = memberDao;
+	}
+
+	public void setMemberDao(MemberDao memberDao) {
+		this.memberDao = memberDao;
+	}
+
+	public void join() {
+		memberDao.select();
+		memberDao.insert();
+	}
+	
+}

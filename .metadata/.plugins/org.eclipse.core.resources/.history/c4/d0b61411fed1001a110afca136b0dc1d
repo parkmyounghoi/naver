@@ -1,0 +1,5 @@
+package mycontext.dao;
+
+public class MemberDAO {
+
+}

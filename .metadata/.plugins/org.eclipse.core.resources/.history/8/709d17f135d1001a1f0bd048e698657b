@@ -1,0 +1,12 @@
+package auto.dao;
+
+public class MemberDao {
+
+	public void insert() {
+		System.out.println("insert 되었습니다.");
+	}
+	
+	public void select() {
+		System.out.println("select...");
+	}
+}

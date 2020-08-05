@@ -1,0 +1,14 @@
+package auto.service;
+
+import auto.dao.MemberDao;
+
+public class MemberService {
+
+	MemberDao memberDao;
+	
+	public void join() {
+		memberDao.select();
+		memberDao.insert();
+	}
+	
+}

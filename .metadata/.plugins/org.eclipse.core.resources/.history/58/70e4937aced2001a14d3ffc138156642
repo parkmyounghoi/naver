@@ -1,0 +1,57 @@
+package com.mh.simple01.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import org.apache.commons.dbcp.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class AADao {
+
+	@Autowired
+	BasicDataSource dataSource;
+	
+	public void select() {
+		System.out.println("SELECT....");
+	}
+	public void insert() {
+		System.out.println("insert...");
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+
+		try {
+			conn = dataSource.getConnection(); 	// dataSource 자료형에 커넥션 반환
+			pstmt = conn.prepareStatement("insert into aa " + 
+									"(bb) " + 
+									"values " + 
+									"('thisss')");
+			pstmt.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				conn.close();	// dataSource 자료형에 커넥션 반환
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

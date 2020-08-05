@@ -1,0 +1,14 @@
+package com.mh.simple01.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class AADao {
+
+	public void select() {
+		System.out.println("SELECT....");
+	}
+	public void insert() {
+		System.out.println("insert...");
+	}
+}

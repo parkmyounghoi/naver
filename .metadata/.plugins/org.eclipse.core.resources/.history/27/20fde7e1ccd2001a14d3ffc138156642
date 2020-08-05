@@ -1,0 +1,27 @@
+package com.mh.simple01.dao;
+
+import java.sql.Connection;
+
+import org.apache.commons.dbcp.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class AADao {
+
+	@Autowired
+	BasicDataSource dataSource;
+	
+	public void select() {
+		System.out.println("SELECT....");
+		
+		Connection conn;
+		
+		
+		dataSource.getConnection();
+		
+	}
+	public void insert() {
+		System.out.println("insert...");
+	}
+}

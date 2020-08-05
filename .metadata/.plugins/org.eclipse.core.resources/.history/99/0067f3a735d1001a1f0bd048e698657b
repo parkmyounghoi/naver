@@ -1,0 +1,5 @@
+package auto.conf;
+
+public class MyCtx {
+
+}

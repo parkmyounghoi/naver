@@ -1,0 +1,16 @@
+package mycontext;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import mycontext.conf.MyConf;
+import mycontext.service.MemberService;
+
+public class MainAnno {
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext acac =
+				new AnnotationConfigApplicationContext(MyConf.class);
+		
+//		MemberService ms = acac.getBean("memberService",MemberService.class);
+		ms.join();
+	}
+}

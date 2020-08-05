@@ -1,0 +1,5 @@
+package mycontext.service;
+
+public class MemberService {
+
+}

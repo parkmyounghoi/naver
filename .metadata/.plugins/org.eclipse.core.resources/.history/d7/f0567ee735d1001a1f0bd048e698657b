@@ -1,0 +1,5 @@
+package auto.dao;
+
+public class MemberDao {
+
+}

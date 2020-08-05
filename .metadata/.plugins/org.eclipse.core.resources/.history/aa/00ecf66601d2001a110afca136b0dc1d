@@ -1,0 +1,19 @@
+package mycontext.conf;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = {"mycontext","myapp"})
+public class MyConf {
+
+//	@Bean
+//	public MemberDAO memberDao() {
+//		return new MemberDAO();
+//	}
+	
+//	@Bean
+//	public MemberService memberService() {
+//		return new MemberService();
+//	}
+}

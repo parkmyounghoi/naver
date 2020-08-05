@@ -1,0 +1,20 @@
+package com.mh.simple01.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mh.simple01.dao.AADao;
+
+@Service
+public class AAService {
+
+	@Autowired
+	AADao aaDao;
+	
+	public void join() {
+		AADao.select();
+		AADao.insert();
+		
+	}
+	
+}

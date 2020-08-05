@@ -1,0 +1,5 @@
+package mycontext.myan;
+
+public @interface MyComponent {
+
+}

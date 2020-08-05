@@ -1,0 +1,13 @@
+package auto;
+
+import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainXML {
+
+	public static void main(String[] args) {
+		
+		GenericXmlApplicationContext gxac = 
+				new GenericXmlApplicationContext("MyConf.xml");
+	}
+}

@@ -1,0 +1,9 @@
+package mycontext.myan;
+
+import java.lang.annotation.Inherited;
+
+import org.springframework.stereotype.Component;
+
+public @interface MyComponent{
+
+}

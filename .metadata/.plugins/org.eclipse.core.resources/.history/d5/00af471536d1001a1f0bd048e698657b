@@ -1,0 +1,5 @@
+package auto.service;
+
+public class MemberService {
+
+}
