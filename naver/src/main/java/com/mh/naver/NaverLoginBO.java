@@ -18,62 +18,53 @@ import com.github.scribejava.core.oauth.OAuth20Service;
 
 @Component
 public class NaverLoginBO {
+	public void doA() {
+		System.out.println("ìŠ¤í”„ë§ ì»¨í…Œì´ë„ˆì— ë„£ìŒ");
+	}
 	private final static String CLIENT_ID = "teoqrk8hILcGCuswoNik";
 	private final static String CLIENT_SECRET = "XNSTTZkeOE";
 	private final static String REDIRECT_URI = "http://localhost:10030/naver/callback";
 	private final static String SESSION_STATE = "oauth_state";
 	
-	/* ÇÁ·ÎÇÊ Á¶È¸ API URL */
 	private final static String PROFILE_API_URL = "https://openapi.naver.com/v1/nid/me";
 
-	/* ³×¾Æ·Î ÀÎÁõ URL »ı¼º Method */
 	public String getAuthorizationUrl(HttpSession session) {
 
-		/* ¼¼¼Ç À¯È¿¼º °ËÁõÀ» À§ÇÏ¿© ³­¼ö¸¦ »ı¼º */
 		String state = generateRandomString();
-		/* »ı¼ºÇÑ ³­¼ö °ªÀ» session¿¡ ÀúÀå */
 		setSession(session, state);
 
-		/* Scribe¿¡¼­ Á¦°øÇÏ´Â ÀÎÁõ URL »ı¼º ±â´ÉÀ» ÀÌ¿ëÇÏ¿© ³×¾Æ·Î ÀÎÁõ URL »ı¼º */
 		OAuth20Service oauthService = new ServiceBuilder().apiKey(CLIENT_ID).apiSecret(CLIENT_SECRET)
 				.callback(REDIRECT_URI).state(state).build(NaverLoginApi.instance());
 
 		return oauthService.getAuthorizationUrl();
 	}
 
-	/* ³×¾Æ·Î Callback Ã³¸® ¹× AccessToken È¹µæ Method */
 	public OAuth2AccessToken getAccessToken(HttpSession session, String code, String state) throws IOException {
 
-		/* CallbackÀ¸·Î Àü´Ş¹ŞÀº ¼¼¼±°ËÁõ¿ë ³­¼ö°ª°ú ¼¼¼Ç¿¡ ÀúÀåµÇ¾îÀÖ´Â °ªÀÌ ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎ */
 		String sessionState = getSession(session);
 		if (StringUtils.equals(sessionState, state)) {
 
 			OAuth20Service oauthService = new ServiceBuilder().apiKey(CLIENT_ID).apiSecret(CLIENT_SECRET)
 					.callback(REDIRECT_URI).state(state).build(NaverLoginApi.instance());
 
-			/* Scribe¿¡¼­ Á¦°øÇÏ´Â AccessToken È¹µæ ±â´ÉÀ¸·Î ³×¾Æ·Î Access TokenÀ» È¹µæ */
 			OAuth2AccessToken accessToken = oauthService.getAccessToken(code);
 			return accessToken;
 		}
 		return null;
 	}
 
-	/* ¼¼¼Ç À¯È¿¼º °ËÁõÀ» À§ÇÑ ³­¼ö »ı¼º±â */
 	private String generateRandomString() {
 		return UUID.randomUUID().toString();
 	}
 
-	/* http session¿¡ µ¥ÀÌÅÍ ÀúÀå */
 	private void setSession(HttpSession session, String state) {
 		session.setAttribute(SESSION_STATE, state);
 	}
 
-	/* http session¿¡¼­ µ¥ÀÌÅÍ °¡Á®¿À±â */
 	private String getSession(HttpSession session) {
 		return (String) session.getAttribute(SESSION_STATE);
 	}
 
-	/* Access TokenÀ» ÀÌ¿ëÇÏ¿© ³×ÀÌ¹ö »ç¿ëÀÚ ÇÁ·ÎÇÊ API¸¦ È£Ãâ */
 	public String getUserProfile(OAuth2AccessToken oauthToken) throws IOException {
 
 		OAuth20Service oauthService = new ServiceBuilder().apiKey(CLIENT_ID).apiSecret(CLIENT_SECRET)

@@ -1,8 +1,0 @@
-package auto;
-
-public class MainAnno {
-
-	public static void main(String[] args) {
-		
-	}
-}

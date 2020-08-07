@@ -5,7 +5,44 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-08-04T16:01:00Z</updated>
+  <updated>2020-08-05T04:22:23Z</updated>
+  <entry>
+    <title>This Week in Spring - August 4th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/08/05/this-week-in-spring-august-4th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-08-05:4152</id>
+    <updated>2020-08-05T04:22:23Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! &lt;/p&gt;
+&lt;p&gt;How&amp;rsquo;re you all doing? Me? I&amp;rsquo;m doing swell! I was so happy to celebrate my tenth anniversary on the Spring team on the 2nd of August, 2020. It has been an amazing run so far and I am so excited about the continued adventure! A huge part of the reason I love this job is because of you, dear community. &lt;em&gt;Thank you&lt;/em&gt;. You can learn more about &lt;a href="http://joshlong.com/jl/blogPost/10-years-on-the-spring-team.html"&gt;the story so far in this blog&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/30/a-bootiful-podcast-josh-lock-on-supply-chain-security-docker-trust-tuf-and-more"&gt;A Bootiful Podcast: Josh Lock on supply chain security, Docker trust, TUF, and more&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Confluent put on yet &lt;a href="https://www.youtube.com/watch?v=3YFlT_yIDxk&amp;feature=youtu.be"&gt;another great stream on Spring Boot and Apache Kafka&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;I am doing a two-day, online, &lt;em&gt;Cloud Native Java&lt;/em&gt; workshop for the legendary YOW! conference. &lt;a href="https://www.eventbrite.com.au/e/yow-workshop-2020-cloud-native-java-aug-14-18-2020-tickets-114222161560?aff=social"&gt;Please register now!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/mesirii/status/1290698839020707840?s=20"&gt;Check out Michael Hunger&amp;rsquo;s Twitch stream tomorrow wherein he&amp;rsquo;ll explore the brand-new Spring Data Neo4J 6 (including the reactive support) on Wednesday, 11am CEST, 7pm AEST, 2:30 IST, 9am GMT.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/RabbitMQ/status/1288626938593128450"&gt;Check out This Month in RabbitMQ, June 2020 Recap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/odedia/status/1290347015600320515?s=12"&gt;Check out the latest release of the Cloud Native Petclinic. This Petclinic is ready-to-deploy on Cloud Foundry and Kubernetes and demonstrates a fully-featured decomposed microservices-based application.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?feature=youtu.be&amp;v=3iUGQL6Zc7U&amp;app=desktop"&gt;Check out this event &lt;em&gt;Developing Event-Driven Microservices using Spring Cloud Stream&lt;/em&gt; coming tomorrow!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/03/creating-a-function-for-consuming-data-and-generating-spring-cloud-stream-sink-applications"&gt;Creating a function for consuming data and generating Spring Cloud Stream Sink applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2020/08/destination-vmworld-app-modernization-channel.html"&gt;Destination VMworld ? App Modernization Channel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.linkedin.com/posts/tim-pepper-b0017a4_bootiful-podcast-tim-pepper-kubernetes-activity-6694370839107792896-upXP"&gt;Have you listened to this fun episode of a &lt;em&gt;Bootiful Podcast&lt;/em&gt; with Tim Pepper?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1290406847707480064"&gt;I loved this: VMware CEO Pat Gelsinger shares on how VMware Tanzu will shape the future of software development on the newest episode of the &lt;em&gt;Looking Ahead&lt;/em&gt; podcast&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.mscharhag.com/spring/json-schema-validation-handlermethodargumentresolver"&gt;Integrating JSON Schema validation in Spring using a custom HandlerMethodArgumentResolver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://medium.com/97-things/java-is-a-90s-kid-96ac5cbf7fed"&gt;Java Is a 90s Kid. ¡°There are only two kinds of languages¡¦&amp;quot; by Ben Evans from the &lt;em&gt;97 Things&lt;/em&gt; book about Java. (NB: I also contributed an article to the book!)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/devrelchap/status/1289828288261586944?s=12"&gt;My amazing first manager Adam Fitzgerald in my ten year anniversary on the Spring team&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/04/spring-cloud-data-flow-2-6-0-released"&gt;Spring Cloud Data Flow 2.6.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/08/04/spring-cloud-hoxton-sr7-has-been-released"&gt;Spring Cloud Hoxton.SR7 has been released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/30/spring-hateoas-1-1-1-release-is-out"&gt;Spring HATEOAS 1.1.1.RELEASE is out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/30/spring-tools-4-7-1-released"&gt;Spring Tools 4.7.1 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/SpringData/status/1290314847121530881"&gt;The Lettuce 6 Redis driver goes RC1. Client-side caching, Push message listeners, and GraalVM Native config files, and more.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/vmworld/2020/07/vmworld-2020-savings-on-certification-exam-vouchers-prep.html"&gt;VMworld 2020 Savings on Certification Exam Vouchers &amp;amp; Prep&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1290464826456760323"&gt;Want training on how to build Spring Boot-based applications? &lt;a href="https://tanzu.vmware.com/training/courses/spring-boot-developer-training"&gt;Check out the Spring Boot: Developer module&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This post has nothing to do with Spring &lt;em&gt;per-se&lt;/em&gt; but it is well-worth your study if you&amp;rsquo;re using something like Axon to build a CQRS-centric system: &lt;a href="https://medium.com/@hugo.oliveira.rocha/what-they-dont-tell-you-about-event-sourcing-6afc23c69e9a"&gt;&lt;em&gt;What they don¡¯t tell you about event sourcing&lt;/em&gt;, by Hugo Rocha&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Hoxton.SR7 has been released</title>
     <link rel="alternate" href="https://spring.io/blog/2020/08/04/spring-cloud-hoxton-sr7-has-been-released" />
@@ -39,7 +76,13 @@
 &lt;p&gt;Added support for disabling JDBC support via a property.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-contract" class="anchor" name="spring-cloud-contract"&gt;&lt;/a&gt;Spring Cloud Contract&lt;/h3&gt;
 &lt;p&gt;Added a &lt;code&gt;StubRunner&lt;/code&gt; based implementation of &lt;code&gt;ReactiveDiscoveryClient&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-openfeign" class="anchor" name="spring-cloud-openfeign"&gt;&lt;/a&gt;Spring Cloud OpenFeign&lt;/h3&gt;
 &lt;p&gt;Added support for &lt;code&gt;CollectionFormat&lt;/code&gt; and improvements in working with &lt;code&gt;@FeignClient&lt;/code&gt;.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-aws" class="anchor" name="spring-cloud-aws"&gt;&lt;/a&gt;Spring Cloud AWS&lt;/h3&gt;
-&lt;p&gt;This is the first GA release under new community maintainers.&lt;/p&gt;
+&lt;p&gt;This is the first GA release under new community maintainers.&lt;/p&gt;&lt;h3&gt;&lt;a href="#spring-cloud-gcp" class="anchor" name="spring-cloud-gcp"&gt;&lt;/a&gt;Spring Cloud GCP&lt;/h3&gt;
+&lt;p&gt;This release features many excellent community contributions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;New Spring Cloud GCP starter, &lt;code&gt;spring-cloud-gcp-starter-metrics&lt;/code&gt;, configures Micrometer Stackdriver to automatically pick up project ID and credentials (thanks to &lt;a href="https://github.com/eddumelendez"&gt;@eddumelendez&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Additional operations for managing secret versions on &lt;code&gt;SecretManagerTemplate&lt;/code&gt; (thanks to &lt;a href="https://github.com/kioie"&gt;@kioie&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Additional GCS Spring Integration file filters &lt;code&gt;GcsAcceptModifiedAfterFileListFilter&lt;/code&gt; and &lt;code&gt;GcsDiscardRecentModifiedFileListFilter&lt;/code&gt; (thanks to &lt;a href="https://github.com/hosainnet"&gt;@hosainnet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr/&gt;
 &lt;p&gt;The following modules were updated as part of Hoxton.SR7:&lt;/p&gt;
 &lt;table&gt;
@@ -1925,19 +1968,6 @@ Function&amp;lt;Integer, Message&amp;lt;String&amp;gt;&amp;gt; convertIntMessage
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Intuit's Katie Levy on Spring Boot, Kotlin, Android and more</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/07/17/a-bootiful-podcast-intuit-s-katie-levy-on-spring-boot-kotlin-android-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-07-17:4132</id>
-    <updated>2020-07-17T05:08:25Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this episode, Josh Long (@starbuxman) talks to Intuit&amp;rsquo;s Katie Levy (@klevy110) about how Intuit uses Spring Boot, Kotlin, Android and more to help tens of millions of users every year with their taxes.&lt;/p&gt;
-&lt;iframe title="Intuit's Katie Levy on Spring Boot, Kotlin, Android and more " src="https://www.podbean.com/media/player/9jsdp-e38cb0?from=usersite&amp;vjs=1&amp;skin=1&amp;fonts=Helvetica&amp;auto=0&amp;download=1" height="315" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -12,7 +12,7 @@
 	
 	<!-- Application Loggers -->
 	<logger name="com.mh.naver">
-		<level value="info" />
+		<level value="dedug" />
 	</logger>
 	
 	<!-- 3rdparty Loggers -->
@@ -30,6 +30,10 @@
 
 	<logger name="org.springframework.web">
 		<level value="info" />
+	</logger>
+	
+	<logger name="org.springframework.jdbc">
+		<level value="debug" />
 	</logger>
 
 	<!-- Root Logger -->

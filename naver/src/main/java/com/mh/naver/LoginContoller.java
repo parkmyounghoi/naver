@@ -19,12 +19,17 @@ public class LoginContoller {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
-	@Autowired
+	@Autowired(required = false)
 	NaverLoginBO naverLoginBO;
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public ModelAndView login(HttpSession session) {
+		
+		return new ModelAndView("login/login", "key", "value");
+	}
 
 	@RequestMapping(value = "/naverLogin", method = RequestMethod.GET)
 	public ModelAndView naverLogin(HttpSession session) {
-		/* 네아로 인증 URL을 생성하기 위하여 getAuthorizationUrl을 호출 */
 		String naverAuthUrl = naverLoginBO.getAuthorizationUrl(session);
 
 //		model.addAttribute("url",naverAuthUrl);
@@ -36,7 +41,6 @@ public class LoginContoller {
 							@RequestParam String state,
 							HttpSession session, Model model,
 							UserVO vo) throws Exception {
-		/* 네아로 인증이 성공적으로 완료되면 code 파라미터가 전달되며 이를 통해 access token을 발급 */
 		logger.info("naver login............");
 		JsonParser json = new JsonParser();
 
@@ -44,12 +48,9 @@ public class LoginContoller {
 		
 		String apiResult = naverLoginBO.getUserProfile(oauthToken);
 		logger.info("apiResult = "+apiResult);
-		//apiResult = 
-//		{"resultcode":"00","message":"success",
-//		 "response":{"id":"29275747","email":"dron512@naver.com"}}
-		vo = json.changeJson(apiResult); // vo에 userEmail, userGender, userNaver 저장
+		vo = json.changeJson(apiResult); 
 		System.out.println("vo = "+ vo);
-//		if (service.selectNaver(vo) > 0) { // 세션만들기
+//		if (service.selectNaver(vo) > 0) {
 			session.setAttribute("login", vo);
 //		} else {
 //			service.insertNaver(vo);

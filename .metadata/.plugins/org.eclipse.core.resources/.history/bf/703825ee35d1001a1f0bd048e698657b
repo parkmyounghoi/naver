@@ -1,8 +1,0 @@
-package auto.dao;
-
-public class MemberDao {
-
-	public void insert() {
-		System.out.println("insert 되었습니다.");
-	}
-}
